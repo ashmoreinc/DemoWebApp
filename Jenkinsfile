@@ -8,15 +8,12 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'rm -rf node_modules package-lock.json && npm install'
-                /* 
-                Copy the files over, 
-                this would be replaced with pulling from VCS
-                */
+                /* Build the code?? */
             }
         }
         stage ("ESLint") {
             steps {
-                echo "Eslinting.."
+                echo "Eslinting..."
                 sh ' eslint -f checkstyle *.js > eslint.xml'
             }
             post {

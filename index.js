@@ -1,13 +1,9 @@
 // Demo testing functionality. Import allows the web page to show if the test should have failed.
 const testCase = require('./demoFuncs').testCase;
 
-<<<<<<< Updated upstream
-const bodyParser = require('body-parser');
-=======
 const fs = require('fs')
 const http = require('http')
 const https = require('https')
->>>>>>> Stashed changes
 const express = require('express');
 
 let useHttps = true;
