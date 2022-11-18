@@ -17,9 +17,7 @@
     "prettier": "^2.7.1"
   },
   "devDependencies": {
-<<<<<<< Updated upstream
     "jest": "^29.2.2"
-=======
     "eslint": "^8.27.0",
     "eslint-config-node": "^4.1.0",
     "eslint-plugin-react": "^7.31.10",
@@ -31,6 +29,5 @@
       "node": true,
       "jest": true
     }
->>>>>>> Stashed changes
   }
 }
