@@ -1,4 +1,4 @@
-const PASS_TEST = true;
+const PASS_TEST = false;
 
 function testCase() {
     return PASS_TEST;
