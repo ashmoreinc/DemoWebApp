@@ -1,7 +1,9 @@
 pipeline {
     // agent any
     agent {
-        deployment-node
+        node {
+            lable "deployment-node"
+        }
     }
     
     tools { nodejs "nodejs:18" }
