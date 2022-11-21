@@ -2,7 +2,7 @@ pipeline {
     // agent any
     agent {
         node {
-            lable "deployment-node"
+            label "deployment-node"
         }
     }
     
