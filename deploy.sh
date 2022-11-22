@@ -17,6 +17,13 @@ ssh -i $PEM_LOC ec2-user@$WEB_APP_ADDR
 
 cd /home/ec2-user/src
 
+# Install dependencies
+npm install
+
+
+# Start
 ./start
 
-echo Greate success!
+exit
+
+echo Great success!
