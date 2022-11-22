@@ -1,10 +1,5 @@
 pipeline {
-    // agent any
-    agent {
-        node {
-            label "deployment-node"
-        }
-    }
+    agent any
     
     tools { nodejs "nodejs:18" }
     
@@ -32,6 +27,11 @@ pipeline {
                 echo 'Testing...'
                 
                 sh 'npm test -- demoFuncs.test.js'
+            }
+        }
+        stage ('Deployment') {
+            steps {
+                sh './deploy'
             }
         }
     }
